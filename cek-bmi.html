@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator BMI – Beit Gym Syar'i Purwokerto</title>
+<meta name="description" content="Hitung BMI (Body Mass Index) kamu gratis dan lihat kategorinya. Konsultasikan program latihan dengan coach Beit Gym Purwokerto.">
+<meta property="og:title" content="Kalkulator BMI – Beit Gym Syar'i Purwokerto">
+<meta property="og:description" content="Hitung BMI (Body Mass Index) kamu gratis dan lihat kategorinya. Konsultasikan program latihan dengan coach Beit Gym Purwokerto.">
+<meta property="og:image" content="assets/logo.png">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="visually-hidden" href="#konten">Langsung ke konten</a>
+<div id="promo" class="promo" hidden></div>
+<header class="header">
+<div class="container header__inner">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="Logo Beit Gym" width="48" height="48"><span class="brand__name"><strong>BEIT GYM</strong><span>Syar'i Purwokerto</span></span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Buka menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+<nav id="nav" class="nav" aria-label="Menu utama">
+<a href="membership.html">Membership</a>
+<a href="personal-trainer.html">Personal Trainer</a>
+<a href="index.html#jadwal">Jadwal</a>
+<a href="cek-bmi.html" aria-current="page">Cek BMI</a>
+<a href="index.html#lokasi">Lokasi</a>
+<a class="btn btn--olive nav__wa" href="#" data-wa="">Daftar via WhatsApp</a>
+</nav>
+<a class="btn btn--olive header__cta" href="#" data-wa="">Daftar via WhatsApp</a>
+</div>
+</header>
+<main id="konten">
+
+<section class="section section--light" style="border-top:0">
+<div class="container split" style="align-items:flex-start">
+<div class="stack" style="gap:18px;padding-top:12px">
+<span class="eyebrow">Kalkulator BMI</span>
+<h1 class="h2" style="font-size:clamp(36px,5vw,60px)">Berat badanmu sudah <span class="mark">ideal?</span></h1>
+<p class="lead">Isi tinggi dan berat badan, hasilnya langsung muncul. Gratis, tanpa daftar.</p>
+</div>
+<div class="bmi bmi--white" data-bmi>
+<div class="bmi__gender" role="group" aria-label="Pilih gender">
+<button type="button" class="bmi__g is-active" data-g="p" aria-pressed="true">Perempuan</button>
+<button type="button" class="bmi__g" data-g="l" aria-pressed="false">Laki-laki</button>
+</div>
+<div class="bmi__fields">
+<label>Tinggi badan (cm)<input type="number" inputmode="decimal" min="50" max="250" placeholder="160" data-t></label>
+<label>Berat badan (kg)<input type="number" inputmode="decimal" min="10" max="300" placeholder="55" data-b></label>
+</div>
+<div class="bmi__result" aria-live="polite">
+<div class="bmi__top"><span><small>BMI kamu</small><span class="bmi__value" data-v>–</span></span><span class="pill pill--lime" data-k>Isi tinggi &amp; berat</span></div>
+<div class="bmi__scale" aria-hidden="true"><span></span><span></span><span></span><span></span><i class="bmi__marker" data-m hidden></i></div>
+<div class="bmi__labels" aria-hidden="true"><span>Kurang</span><span>Normal</span><span>Berlebih</span><span>Obesitas</span></div>
+<p class="bmi__saran" data-s></p>
+</div>
+<a class="btn btn--olive btn--block" href="#" target="_blank" rel="noopener" data-cta>Konsultasi dengan Coach Muslimah</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container stack">
+<div class="section-head"><span class="eyebrow">Kategori BMI dewasa (WHO)</span><h2 class="h2">Cara membaca <span class="mark">hasilnya</span></h2></div>
+<div class="grid grid-4">
+<div class="card card--white kategori" style="border-top:8px solid #6B7A5A"><span class="anton" style="font-size:30px">&lt; 18,5</span><h3>Berat kurang</h3><p>Fokus menambah massa otot dan asupan gizi yang cukup.</p></div>
+<div class="card card--white kategori" style="border-top:8px solid #BCE41A"><span class="anton" style="font-size:30px">18,5 – 24,9</span><h3>Normal</h3><p>Pertahankan dengan latihan rutin dan pola makan seimbang.</p></div>
+<div class="card card--white kategori" style="border-top:8px solid #E5C84A"><span class="anton" style="font-size:30px">25 – 29,9</span><h3>Berat berlebih</h3><p>Kombinasi latihan beban, kardio, dan atur pola makan.</p></div>
+<div class="card card--white kategori" style="border-top:8px solid #E07A3F"><span class="anton" style="font-size:30px">≥ 30</span><h3>Obesitas</h3><p>Mulai bertahap dengan pendampingan, dan konsultasikan ke tenaga kesehatan.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section section--light">
+<div class="container split" style="align-items:flex-start">
+<div class="stack" style="gap:14px">
+<span class="eyebrow">Tentang BMI</span>
+<h2 class="h2" style="font-size:clamp(28px,3.4vw,40px)">Apa itu BMI?</h2>
+<p class="lead" style="font-size:16px">Body Mass Index (BMI) adalah berat badan (kg) dibagi tinggi badan (m) kuadrat. Angka ini memberi gambaran awal apakah berat badan sesuai dengan tinggi badan.</p>
+<div class="card card--white" style="font-weight:700">BMI = berat (kg) ÷ [tinggi (m) × tinggi (m)]</div>
+</div>
+<div class="card card--white"><h3>Perlu diingat</h3>
+<ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;color:var(--body);line-height:1.6">
+<li>BMI tidak membedakan otot dan lemak. Orang berotot bisa terbaca "berlebih" padahal sehat.</li>
+<li>Kategori ini untuk dewasa, bukan untuk anak, remaja, atau ibu hamil.</li>
+<li>Untuk gambaran lebih lengkap, konsultasikan dengan coach atau tenaga kesehatan.</li>
+</ul></div>
+</div>
+</section>
+
+<section class="section section--dark" style="padding:64px 0">
+<div class="container" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px">
+<h2 class="h2" style="font-size:clamp(26px,3.4vw,40px)">Sudah tahu angkanya? <span class="lime">Saatnya bergerak.</span></h2>
+<div class="actions"><a class="btn btn--lime" href="membership.html">Lihat Membership</a><a class="btn btn--outline-light" href="personal-trainer.html">Personal Trainer</a></div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container footer__inner">
+<div class="footer__brand"><img src="assets/logo.png" alt="Logo Beit Gym" width="56" height="56"><span class="footer__tag">#MASTER YOUR NAFS.</span></div>
+<div class="footer__links">
+<a href="#" data-ig>@beitgympurwokerto</a>
+<a href="#" data-wa=""><span data-text="wa"></span></a>
+</div>
+<p class="footer__copy">© <span data-year></span> Beit Gym Syar'i Purwokerto · <span data-text="alamat"></span></p>
+</div>
+</footer>
+<a class="wa-float" href="#" data-wa="" aria-label="Chat WhatsApp Beit Gym"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></a>
+<script src="data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
