@@ -1,0 +1,2 @@
+Simpan foto website di folder ini (hero, coach, galeri).
+Lalu tulis nama filenya di data.js, contoh: "images/hero.jpg".
